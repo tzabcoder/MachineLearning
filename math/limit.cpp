@@ -27,6 +27,14 @@ double f_3(double x) {
 }
 
 /**
+ * @brief returns the value of the function (f) at x.
+ * The function is: y = 2x / x
+ */
+double f_4(double x) {
+    return (2 * x) / x;
+}
+
+/**
  * @brief Evaluates the limit of the function (f) numerically
  * as x approaches a. Runs n iterations for left-sided and right-
  * sided limits using the step size to allow x to approach a. The
@@ -79,6 +87,10 @@ int main() {
     // Lim as x->3
     double lim_3 = numerical_limit(3, 10, 0.1, 0.001, &f_3);
     std::cout << lim_3 << std::endl;
+
+    // Lim as x->0
+    double lim_4 = numerical_limit(0, 10, 0.1, 0.001, &f_4);
+    std::cout << lim_4 << std::endl;
 
     return 0;
 }
