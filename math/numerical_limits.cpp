@@ -4,7 +4,7 @@
 
 /**
  * @brief returns the value of the function (f) at x.
- * The function is: y = x^2 + 2x - 1
+ * The function is: y = x^2 - 2x - 1
  */
 double f_1(double x) {
     return (x * x) - (2 * x) - 1;
